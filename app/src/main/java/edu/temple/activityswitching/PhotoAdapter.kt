@@ -1,6 +1,7 @@
 package edu.temple.activityswitching
 
 import android.content.Context
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -9,7 +10,11 @@ import androidx.recyclerview.widget.RecyclerView
 import java.util.Optional.empty
 
 class PhotoAdapter(var context : Context) : RecyclerView.Adapter<PhotoAdapter.ViewHolder>() {
-    var dataList = empty<PhotoObject>()
+    var dataList = emptyList<PhotoObject>()
+
+    internal fun setDataList(dataList: List<PhotoObject>) {
+        this.dataList = dataList
+    }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var image: ImageView
@@ -23,15 +28,19 @@ class PhotoAdapter(var context : Context) : RecyclerView.Adapter<PhotoAdapter.Vi
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        TODO("Not yet implemented")
+        var view = LayoutInflater.from(parent.context).inflate(R.layout.card_layout, parent, false)
+        return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        var data = dataList[position]
+        holder.name.text = data.name
+        holder.description.text = data.description
+        holder.image.setImageResource(data.image)
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return dataList.size
     }
 
 }
