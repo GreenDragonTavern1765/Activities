@@ -1,11 +1,14 @@
 package edu.temple.activityswitching
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import java.util.Optional.empty
 
@@ -24,6 +27,9 @@ class PhotoAdapter(var context : Context) : RecyclerView.Adapter<PhotoAdapter.Vi
             image = itemView.findViewById(R.id.cardImage)
             name = itemView.findViewById(R.id.title)
             description = itemView.findViewById(R.id.desc)
+            itemView.setOnClickListener {
+                val intent = Intent(this, DisplayActivity::class.java)
+            }
         }
     }
 
