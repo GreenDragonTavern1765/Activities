@@ -1,14 +1,20 @@
 package edu.temple.activityswitching
 
+import android.content.Intent
+import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), viewListener {
 
     private lateinit var photoAdapter: PhotoAdapter
     private var dataList = mutableListOf<PhotoObject>()
+    var name: String? = null
+    var description: String? = null
+    var image: Image? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         recyclerView.layoutManager = GridLayoutManager(applicationContext, 4)
-        photoAdapter = PhotoAdapter(applicationContext)
+        photoAdapter = PhotoAdapter(applicationContext, this)
         recyclerView.adapter = photoAdapter
         fillDataList()
         photoAdapter.setDataList(dataList)
@@ -51,5 +57,10 @@ class MainActivity : AppCompatActivity() {
         dataList.add(PhotoObject("Tully","Riverrun", R.drawable.tully))
         dataList.add(PhotoObject("Tyrell","Highgarden", R.drawable.tyrell))
         dataList.add(PhotoObject("Umber","Last Hearth", R.drawable.umber))
+    }
+
+    override fun onItemClick(photo: PhotoObject) {
+        val intent = Intent(this, DisplayActivity::class.java)
+        startActivity(intent)
     }
 }
