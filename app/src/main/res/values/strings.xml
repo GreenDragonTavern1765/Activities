@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ActivitySwitching</string>
+    <string name="instructionsLabel">Click an Image Below to View</string>
+    <string-array name="houseNames">
+        <item>Arryn</item>
+        <item>Baratheon</item>
+
+    </string-array>
 </resources>
