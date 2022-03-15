@@ -2,8 +2,46 @@
     <string name="app_name">ActivitySwitching</string>
     <string name="instructionsLabel">Click an Image Below to View</string>
     <string-array name="houseNames">
-        <item>Arryn</item>
-        <item>Baratheon</item>
+        <item>Arryn</item> <item>Baratheon</item> <item>Baratheon</item>
+        <item>Blackfyre</item> <item>Bolton</item> <item>Cerwyn</item>
+        <item>Clegane</item> <item>Corbray</item> <item>Dayne</item>
+        <item>Frey</item> <item>Glover</item> <item>Grafton</item>
+        <item>Greyjoy</item> <item>Hightower</item> <item>Karstark</item>
+        <item>Lannister</item> <item>Mallister</item> <item>Martell</item>
+        <item>Mormont</item> <item>Royce</item> <item>Stark</item>
+        <item>Targaryen</item> <item>Tarly</item> <item>Tarth</item>
+        <item>Tollett</item> <item>Tully</item> <item>Tyrell</item>
+        <item>Umber</item>
 
+    </string-array>
+    <string-array name="houseSeats">
+        <item>The Eyrie</item>
+        <item>Dragonstone</item>
+        <item>Storms End</item>
+        <item>Kings Landing</item>
+        <item>Dreadfort</item>
+        <item>Castle Cerwyn</item>
+        <item>Cleganes Keep</item>
+        <item>Hearts Home</item>
+        <item>Starfall</item>
+        <item>The Twins</item>
+        <item>Deepwood Mott</item>
+        <item>Gulltown</item>
+        <item>Pyke</item>
+        <item>Oldtown</item>
+        <item>Karhold</item>
+        <item>Casterly Rock</item>
+        <item>Seagard</item>
+        <item>Sunspear</item>
+        <item>Bear Island</item>
+        <item>Runestone</item>
+        <item>Winterfell</item>
+        <item>Kings Landing</item>
+        <item>Horn Hill</item>
+        <item>Tarth</item>
+        <item>Grey Glen</item>
+        <item>Riverrun</item>
+        <item>Highgarden</item>
+        <item>Last Hearth</item>
     </string-array>
 </resources>
