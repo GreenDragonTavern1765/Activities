@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="houseNamesFrench">
+        <item>Aron</item>
+        <item>Barathéon</item>
+        <item>Barathéon</item>
+        <item>Feu Noir</item>
+        <item>Boulonner</item>
+        <item>Gerwyn</item>
+        <item>Clégane</item>
+        <item>Corbeau</item>
+        <item>Journee</item>
+        <item>Freya</item>
+        <item>Gantier</item>
+        <item>Greffons</item>
+        <item>Joie Grise</item>
+        <item>Haute Tour</item>
+        <item>Karstark</item>
+        <item>Lanterne</item>
+        <item>Malister</item>
+        <item>Martel</item>
+        <item>élan</item>
+        <item>Rouleaux</item>
+        <item>Rigide</item>
+        <item>Dragonne</item>
+        <item>Goudronneux</item>
+        <item>Tarte</item>
+        <item>Tollette</item>
+        <item>Tuly</item>
+        <item>Pneull</item>
+        <item>Ombre</item>
+    </string-array>
+
+    <string-array name="houseSeatsFrench">
+        <item>le nid d'aigle</item>
+        <item>dragonstone</item>
+        <item>la fin de la tempête</item>
+        <item>le débarquement du roi</item>
+        <item>fort d'effroi</item>
+        <item>château de cerwyn</item>
+        <item>Cleganes garder</item>
+        <item>coeurs maison</item>
+        <item>chute d'étoiles</item>
+        <item>les jumeaux</item>
+        <item>bois profond</item>
+        <item>ville de la mouette</item>
+        <item>îles de fer</item>
+        <item>vieille ville</item>
+        <item>Karhold</item>
+        <item>roche Castral</item>
+        <item>mer</item>
+        <item>lance du soleil</item>
+        <item>île aux ours</item>
+        <item>pierre runique</item>
+        <item>chute d'hiver</item>
+        <item>le débarquement du roi</item>
+        <item>colline de la corne</item>
+        <item>tarte</item>
+        <item>vallée grise</item>
+        <item>cours d'eau</item>
+        <item>haut jardin</item>
+        <item>dernier foyer</item>
+    </string-array>
+</resources>
